@@ -2,9 +2,37 @@ var run =0;
 var opacity = 1;
 var currentX = 0;
 var currentY = 0;
-function initJSClass() {
+function initJSClass(pageName) {
+   /* create and choose background and manipulate camera*/
+    switch (pageName){
+        case "AboutMe":
+            run=1;
+            changeImg();
+            break;
 
-    changeImg();
+        case "Experience":
+            run=2;
+            currentX=10;
+            currentY=10;
+            changeImg();
+            break;
+
+        case "Projects":
+            run=3;
+            currentX=65;
+            currentY=40;
+            changeImg();
+            break;
+
+        default:
+
+            changeImg();
+
+    }
+
+
+
+
     changePlace();
 
 
@@ -98,3 +126,16 @@ function changePlace() {
 
     },100);
 }
+/* przykład mouseover
+function buttonMouseOver(name){
+
+    switch (name) {
+        case "Java":
+            buttonDiv.onmouseover = function (ev) { document.getElementById(name).style.backgroundColor = deeafulWebStyle.buttons.setClickedButtonColor; };
+            buttonDiv.onmouseout = function (ev) { document.getElementById(name).style.backgroundColor = deeafulWebStyle.buttons.backgroundColor; };
+
+    }
+
+    }
+}
+*/

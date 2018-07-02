@@ -203,8 +203,9 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-height: 35em ) {
     /* Style adjustments for viewports that meet the condition */
+
 }
 
 @media print,
@@ -212,6 +213,8 @@ textarea {
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+
+
 }
 
 /* ==========================================================================
@@ -229,7 +232,10 @@ textarea {
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
+        margin: 1%;
     }
+
+
 
     a,
     a:visited {
@@ -319,7 +325,7 @@ textarea {
 
     background-size: 200% 200%;
     background-position: initial;
-    background-image:url("../img/abstract_variationChanged.jpg");
+   /* background-image:url("../img/abstract_variationChanged.jpg");*/
 
     width: 100vw;
     height: 100vh;
@@ -351,9 +357,10 @@ textarea {
 .whiteFrameForText{
 
 
+    overflow:auto;
     border: 4px solid #e6e6ff;
     position: center;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 4px;
@@ -362,8 +369,42 @@ textarea {
 
 
 }
-.pre-scrollable{
 
-    overflow-y: auto;
+.imgRos{
+    width: auto;
+    height: 430px;
+    margin: auto;
 }
+/*
+    Mobile version to phone
+*/
+
+
+@media screen and (max-width: 600px){
+
+    .col-md{
+        margin: auto;
+
+
+
+    }
+    .imgRos{
+        width: auto;
+        height: 250px;
+        margin: auto;
+    }
+
+}
+/*
+Change position in CSS but not work property
+*/
+
+@keyframes backgroundImg  {
+    0% {background-image: url("../img/backgroundHD/forest.jpg"); }
+    25% {background-image: url("../img/backgroundHD/waterfalls.jpg");}
+    50% {background-image: url("../img/backgroundHD/greenForest.jpg");}
+    75% {background-image: url("../img/backgroundHD/redCloud.jpg");}
+    100% {background-image: url("../img/backgroundHD/forest.jpg");}
+}
+
 
