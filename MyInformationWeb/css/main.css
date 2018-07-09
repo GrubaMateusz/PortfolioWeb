@@ -345,6 +345,7 @@ textarea {
 }
 .marginTop50{
     margin-top: 50px;
+
 }
 .myCSS{
     width: 100%;
@@ -369,15 +370,46 @@ textarea {
 
 
 }
+.whiteFrameForImg{
+    overflow:auto;
+    border: 4px solid #e6e6ff;
+    position: center;
+    margin-top: 70px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 4px;
+    background: rgba(230, 236, 255,0.55);
+
+
+}
+.whiteOvalFrameForText{
+    overflow: auto;
+    border: dot-dash;
+    position: relative;
+    border-radius: 45px;
+    background: rgba(230, 236, 255,0.55);
+    margin-right: auto;
+    margin-left: auto;
+    color:#000033;
+}
+
 
 .imgRos{
     width: auto;
     height: 430px;
-    margin: auto;
+
 }
-/*
-    Mobile version to phone
-*/
+.backgroundHoverDarkBlue:hover{
+    background: rgba(0, 0, 51,0.55);
+    overflow: auto;
+    border: dot-dash;
+    position: initial;
+    border-radius: 45px;
+
+}
+/****************************
+*                   Mobile version to phone
+******************************/
 
 
 @media screen and (max-width: 600px){
@@ -390,14 +422,21 @@ textarea {
     }
     .imgRos{
         width: auto;
-        height: 250px;
+        height: 245px;
+        margin: auto;
+    }
+    .whiteFrameForImg{
+        margin: auto;
+    }
+    .whiteOvalFrameForText{
         margin: auto;
     }
 
+
 }
-/*
-Change position in CSS but not work property
-*/
+/***************************
+*                   Change position in CSS but not work property
+***************************/
 
 @keyframes backgroundImg  {
     0% {background-image: url("../img/backgroundHD/forest.jpg"); }
@@ -408,3 +447,117 @@ Change position in CSS but not work property
 }
 
 
+.progress{
+
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+
+}
+/*********************************
+*      Icons to expierence and hover(Dark)
+***********************************/
+.javaImg{
+    background-image: url("../img/expierenceIcon/JavaIco80.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+
+}
+.javaImg:hover {
+    background-image: url("../img/expierenceIcon/JavaIco80Dark.png");
+
+}
+.bootstrapImg{
+    background-image: url("../img/expierenceIcon/BootstrapIco80.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+
+}
+.bootstrapImg:hover {
+    background-image: url("../img/expierenceIcon/BootstrapIco80Dark.png");
+
+}
+.CSSImg{
+    background-image: url("../img/expierenceIcon/CSSIco80.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+
+}
+.CSSImg:hover {
+    background-image: url("../img/expierenceIcon/CSSIco80Dark.png");
+
+}
+.HtmlImg{
+
+    background-image: url("../img/expierenceIcon/HtmlIco80.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+
+}
+.HtmlImg:hover {
+    background-image: url("../img/expierenceIcon/HtmlIco80Dark.png");
+
+}
+.javascriptImg{
+    background-image: url("../img/expierenceIcon/JavascriptIco80.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+
+}
+.javascriptImg:hover {
+    background-image: url("../img/expierenceIcon/JavascriptIco80Dark.png");
+
+}
+.gitHubImg{
+
+    background-image: url("../img/expierenceIcon/Github-icon80.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    position: center;
+    margin: auto;
+}
+.gitHubImg:hover{
+    background-image: url("../img/expierenceIcon/Github-icon80Dark.png");
+
+}
+
+/***********************
+*                   Small project ico
+*************************/
+.smallGitIco{
+
+    background-image: url("../img/small_Icon/Github-icon35.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    position: center;
+    margin: auto;
+}
+.smallGitIco:hover{
+    background-image: url("../img/small_Icon/Github-icon35Dark.png");
+
+}

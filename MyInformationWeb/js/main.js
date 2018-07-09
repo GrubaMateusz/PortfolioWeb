@@ -14,7 +14,9 @@ function initJSClass(pageName) {
             run=2;
             currentX=10;
             currentY=10;
+
             changeImg();
+
             break;
 
         case "Projects":
@@ -139,3 +141,34 @@ function buttonMouseOver(name){
     }
 }
 */
+/*
+    Metod not used in program i will created in CSS
+*/
+
+function createExpButton(name) {
+
+    var imgUrls = [10];
+    imgUrls[0] = '../img/backgroundHD/forest.jpg';
+    imgUrls[1] = '../img/backgroundHD/greenForest.jpg';
+    imgUrls[2] = '../img/backgroundHD/redCloud.jpg';
+    imgUrls[3] = '../img/backgroundHD/waterfalls.jpg';
+
+
+    var imgDiv = document.getElementById(name);
+
+    imgDiv.onmouseover = function (ev) {
+        imgDiv.style.backgroundImage = "url('../img/expierenceIcon/BootstrapIco80Dark.png')";
+
+
+    };
+    imgDiv.onmouseout = function (ev) {
+       imgDiv.style.backgroundImage = "url('../img/expierenceIcon/BootstrapIco80.png')";
+
+    }
+
+}
+
+
+
+
+
