@@ -365,7 +365,7 @@ textarea {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 4px;
-    background: rgba(230, 236, 255,0.55);
+    background: rgba(230, 236, 255,0.75);
 
 
 
@@ -387,10 +387,11 @@ textarea {
     border: dot-dash;
     position: relative;
     border-radius: 45px;
-    background: rgba(230, 236, 255,0.55);
+    background: rgba(230, 236, 255,0.75);
     margin-right: auto;
     margin-left: auto;
     color:#000033;
+
 }
 
 
@@ -400,11 +401,12 @@ textarea {
 
 }
 .backgroundHoverDarkBlue:hover{
-    background: rgba(0, 0, 51,0.55);
+    background: rgba(0, 0, 51,0.60);
     overflow: auto;
     border: dot-dash;
     position: initial;
     border-radius: 45px;
+
 
 }
 /****************************
@@ -561,3 +563,15 @@ textarea {
     background-image: url("../img/small_Icon/Github-icon35Dark.png");
 
 }
+#h3{
+    color: #e6e6ff;
+}
+#h3:hover{
+    color: rgba(0, 0, 51,0.60) ;
+}
+/*
+************************************************************************************************************************
+***************************************************Test Web components**************************************************
+************************************************************************************************************************
+*/
+

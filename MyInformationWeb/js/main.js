@@ -21,8 +21,8 @@ function initJSClass(pageName) {
 
         case "Projects":
             run=3;
-            currentX=65;
-            currentY=40;
+            currentX=20;
+            currentY=10;
             changeImg();
             break;
 
